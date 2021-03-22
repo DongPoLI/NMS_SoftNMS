@@ -1,6 +1,9 @@
 # NMS都不会，做什么Detection！
 ## Non-maximum suppression（非极大值抑制）算法
 
+**主要完成NMS和Soft NMS的代码**
+1. README.md 中记录NMS的原理和Pytorch、Numpy实现代码，对应python文件：NMS.py、numpy_NMS.py，实现代码和`torchvision.ops.nms`接口NMS比较过！
+2. softNMS.md 中记录Soft NMS的实现步骤和Pytorch实现代码，Soft NMS代码 未找到 合适代码比较，欢迎指正错误
 ### NMS原理： 
 1. 首先得出所有的预测框集合`B`、 对应框的得分`Scores`， NMS(IoU)阈值`T`;
 2. 定义存放侯选框的集合`H`（初始为`Null`）， 对`Scores`排序选出得分最大的框为`maxBox`， 
